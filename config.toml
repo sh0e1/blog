@@ -1,3 +1,16 @@
-baseURL = "http://example.org/"
-languageCode = "en-us"
-title = "My New Hugo Site"
+baseURL = "https://sh0e1.com/"
+languageCode = "ja"
+title = "sh0e1.com"
+theme = "m10c"
+
+[params]
+  author = "sh0e1"
+  description = "Software Engineer / Go / PHP / JavaScript / GCP Professional Cloud Architect"
+  avatar = "/avatar.png"
+
+  [[params.social]]
+    name = "github"
+    url = "https://github.com/sh0e1"
+  [[params.social]]
+    name = "twitter"
+    url = "https://twitter.com/sh0e12uatanal3e"
