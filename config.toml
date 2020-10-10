@@ -14,3 +14,10 @@ theme = "m10c"
   [[params.social]]
     name = "twitter"
     url = "https://twitter.com/sh0e12uatanal3e"
+
+  #[params.style]
+  #  darkestColor = "#f8f9fb"
+  #  darkColor = "#ffffff"
+  #  primaryColor = "#303d4e"
+  #  lightColor = "#4b5766"
+  #  lightestColor = "#3eaf7c"
