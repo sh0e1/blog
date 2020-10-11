@@ -11,6 +11,7 @@ categories:
 Goで実装したCloud Run(fully managed)をCloud Pub/SubのPushサブスクリプションに使ってみました。
 Cloud Run(fully managed)は、先日BetaからGAになりました。
 環境構築がまだの場合は[前回の記事](/posts/2019/07/29/tried-gcp-s-cloud-run-in-go/)に書いているので、ご覧いただければと思います。
+<!--more-->
 
 今回のソースコードは[GitHub](https://github.com/sh0e1/cloud-run-samples/tree/master/pubsub)へあげてます。
 

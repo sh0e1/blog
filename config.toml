@@ -1,24 +1,42 @@
-baseURL = "https://sh0e1.com/"
+baseURL = "https://sh0e1.com"
 languageCode = "ja"
 title = "sh0e1.com"
-theme = "m10c"
+theme = "anatole"
 googleAnalytics = "UA-131592660-1"
 
 [params]
+  title = "sh0e1.com"
   author = "sh0e1"
   description = "Software Engineer / Go / PHP / JavaScript / GCP Professional Cloud Architect"
-  avatar = "/avatar.png"
+  profilePicture = "images/profile.png"
+  mainSections = ["post"]
 
-  [[params.social]]
-    name = "github"
+  ## Math settings
+  [params.math]
+    enable = true  # options: true, false. Enable math support globally, default: false. You can always enable math on per page.
+    use = "katex"  # options: "katex", "mathjax". default is "katex".
+
+  # Social links
+  [[params.socialIcons]]
+    icon = "fa-github"
+    title = "GitHub"
     url = "https://github.com/sh0e1"
-  [[params.social]]
-    name = "twitter"
+
+  [[params.socialIcons]]
+    icon = "fa-twitter"
+    title = "Twitter"
     url = "https://twitter.com/sh0e12uatanal3e"
 
-  #[params.style]
-  #  darkestColor = "#f8f9fb"
-  #  darkColor = "#ffffff"
-  #  primaryColor = "#303d4e"
-  #  lightColor = "#4b5766"
-  #  lightestColor = "#3eaf7c"
+## Menu items
+[menu]
+  [[menu.main]]
+  name = "Home"
+  identifier = "home"
+  weight = 100
+  url = "/"
+
+  [[menu.main]]
+  name = "Posts"
+  weight = 200
+  identifier = "posts"
+  url = "/posts/"

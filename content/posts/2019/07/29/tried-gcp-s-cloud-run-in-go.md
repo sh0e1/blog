@@ -10,6 +10,7 @@ categories:
 ---
 GoでHello WorldをGCPのCloud Runを試してみました。
 Cloud RunはFull ManagedかGKEで利用することができますが、今回はFull ManagedのCloud Runを利用しました。
+<!--more-->
 
 ### Cloud Runとは
 
