@@ -3,10 +3,10 @@ title: GCPのCloud RunをGoで試してみた
 author: sh0e1
 type: post
 date: 2019-07-28T16:08:05+00:00
-featured_image: https://storage.googleapis.com/cdn.sh0e1.com/medias/ed1f0a5a-fig-28-07-2019_16-07-41.jpg
 categories:
   - Go
   - Google Cloud Platform
+  - Cloud Run
 ---
 GoでHello WorldをGCPのCloud Runを試してみました。
 Cloud RunはFull ManagedかGKEで利用することができますが、今回はFull ManagedのCloud Runを利用しました。

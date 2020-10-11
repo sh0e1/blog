@@ -3,16 +3,16 @@ title: Cloud Run/GoでCloud Pub/Subのサブスクライブ
 author: sh0e1
 type: post
 date: 2019-12-21T15:51:59+00:00
-featured_image: https://storage.googleapis.com/cdn.sh0e1.com/medias/a69e2909-fig-21-12-2019_15-51-22.jpg
 categories:
   - Go
   - Google Cloud Platform
+  - Cloud Run
 ---
 Goで実装したCloud Run(fully managed)をCloud Pub/SubのPushサブスクリプションに使ってみました。
 Cloud Run(fully managed)は、先日BetaからGAになりました。
-環境構築がまだの場合は<a href="https://sh0e1.com/posts/496/" rel="noopener noreferrer" target="_blank">前回の記事</a>に書いているので、ご覧いただければと思います。
+環境構築がまだの場合は[前回の記事](/posts/2019/07/29/tried-gcp-s-cloud-run-in-go/)に書いているので、ご覧いただければと思います。
 
-今回のソースコードは [GitHub](https://github.com/sh0e1/cloud-run-samples/tree/master/pubsub) へあげてます。
+今回のソースコードは[GitHub](https://github.com/sh0e1/cloud-run-samples/tree/master/pubsub)へあげてます。
 
 ### Cloud Pub/Sub トピックを作成
 
@@ -77,10 +77,10 @@ type pubSubMessage struct {
 ```
 
 httpサーバを起動して、リクエストボディのメッセージをログに表示されているだけです。
-Cloud Pub/Subからどんなリクエストがくるか確認するために、 `httputil.DumpRequest()` を使ってリクエストのdumpもしています。 
+Cloud Pub/Subからどんなリクエストがくるか確認するために、 `httputil.DumpRequest()` を使ってリクエストのdumpもしています。
 Cloud Runのドキュメントにも記載されていますが、httpステータスコードを正確に返すように実装する必要があります。
 
-> 正確な HTTP レスポンス コードを返すようにサービスをコーディングする必要があります。HTTP 200 や 204 などの成功コードは、Cloud Pub/Sub メッセージの処理の完了を意味します。HTTP 400 や 500 などのエラーコードは、 [push を使用したメッセージの受信](https://cloud.google.com/pubsub/docs/push) で説明されているように、メッセージが再試行されることを示します。
+> 正確な HTTP レスポンス コードを返すようにサービスをコーディングする必要があります。HTTP 200 や 204 などの成功コードは、Cloud Pub/Sub メッセージの処理の完了を意味します。HTTP 400 や 500 などのエラーコードは、[push を使用したメッセージの受信](https://cloud.google.com/pubsub/docs/push)で説明されているように、メッセージが再試行されることを示します。
 
 ### Dockerfile
 
