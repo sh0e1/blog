@@ -2,6 +2,7 @@ baseURL = "https://sh0e1.com/"
 languageCode = "ja"
 title = "sh0e1.com"
 theme = "m10c"
+googleAnalytics = "UA-131592660-1"
 
 [params]
   author = "sh0e1"
