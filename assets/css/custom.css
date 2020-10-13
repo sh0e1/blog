@@ -1,0 +1,20 @@
+.sidebar {
+  width: 30%;
+}
+
+.page-top {
+  width: 70%;
+}
+
+.content {
+  width: 70%;
+}
+
+.sidebar .logo-title .title h3 {
+  text-transform: none;
+  letter-spacing: normal;
+}
+
+.post .post-title h3 {
+  text-transform: none;
+}

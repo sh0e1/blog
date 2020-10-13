@@ -10,6 +10,7 @@ googleAnalytics = "UA-131592660-1"
   description = "Software Engineer / Go / PHP / JavaScript / GCP Professional Cloud Architect"
   profilePicture = "images/profile.png"
   mainSections = ["post"]
+  customCss = ["css/custom.css"]
 
   ## Math settings
   [params.math]
