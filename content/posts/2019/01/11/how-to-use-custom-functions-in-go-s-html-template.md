@@ -7,6 +7,7 @@ categories:
   - Go
 ---
 今回はGoの`html/template`パッケージで独自関数を使う方法について書きます。
+<!--more-->
 
 ### html/template packageとは
 
@@ -15,7 +16,6 @@ https://golang.org/pkg/html/template/
 
 テキストでテンプレートエンジンを使いたい場合は `text/template` パッケージを使います。  
 https://golang.org/pkg/text/template/
-<!--more-->
 
 ### 標準で定義されているFunctions
 
