@@ -7,7 +7,8 @@ categories:
   - C
   - Vim
 ---
-アルゴリズムとC言語の勉強をしようと思い下記の本を買ったので、MacでC言語の開発環境を構築しました。またどうせならVimを使ってコードを書いていこうと思い、Vimの設定も行ったのでそれも合わせて書きます。
+アルゴリズムとC言語の勉強をしようと思い下記の本を買ったので、MacでC言語の開発環境を構築しました。  
+またどうせならVimを使ってコードを書いていこうと思い、Vimの設定も行ったのでそれも合わせて書きます。
 <!--more-->
 
 ### 前提条件
@@ -28,7 +29,7 @@ C言語のコンパイラといえばgccだと思っていたのですが、色�
 >
 > Clang プロジェクトではコンパイラのフロントエンドに加えてClang静的コード解析ツールも開発している。
 
-今回使おうとしていたVimプラグインもClang用みたいなので、今回はClangを使っていこうと思います。
+今回使おうとしていたVimプラグインもClang用みたいなので、今回はClangを使っていこうと思います。  
 ClangはCommmand Line Toolsをインストールすると、一緒にインストールされるようです。
 
 ```bash
@@ -36,7 +37,7 @@ $ xcode-select --install
 xcode-select: error: command line tools are already installed, use "Software Update" to install updates
 ```
 
-私の環境だとすでにCommand Line Toolsがインストールされているので `xcode-select: error: command line tools are already installed, use "Software Update" to install updates` と表示されました。
+私の環境だとすでにCommand Line Toolsがインストールされているので `xcode-select: error: command line tools are already installed, use "Software Update" to install updates` と表示されました。  
 clangがインストールされれば `clang --version` でバージョン情報が表示されます。
 
 ```bash
@@ -49,7 +50,7 @@ InstalledDir: /Library/Developer/CommandLineTools/usr/bin
 
 ### Vimの設定
 
-VimでC言語のコーディングをしやすくするためにVimの設定をします。
+VimでC言語のコーディングをしやすくするためにVimの設定をします。  
 今回は自動で入力補完をしてくれる[vim-clang](https://github.com/justmao945/vim-clang)だけインストールします。他にも `.c` と `.h` ファイル間の移動を楽にしてくれる[a.vim](https://github.com/vim-scripts/a.vim)などのプラグインもありますが、必要になったら都度インストールしていきたいと思います。
 
 #### clang-formatのインストール
@@ -80,7 +81,7 @@ Plugin 'justmao945/vim-clang'
 :VundleInstall
 ```
 
-これで自動補完が使えるようになってるはずです。オプションも色々ありますが、後で設定していきたいと思います。
+これで自動補完が使えるようになってるはずです。オプションも色々ありますが、後で設定していきたいと思います。  
 あと便利なのが `:ClangFormat` でコードを整形できます。
 
 **整形前**
