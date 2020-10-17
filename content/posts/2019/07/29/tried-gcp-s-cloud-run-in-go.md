@@ -8,7 +8,7 @@ categories:
   - Google Cloud Platform
   - Cloud Run
 ---
-GoでHello WorldをGCPのCloud Runを試してみました。
+GoでHello WorldをGCPのCloud Runを試してみました。  
 Cloud RunはFull ManagedかGKEで利用することができますが、今回はFull ManagedのCloud Runを利用しました。
 <!--more-->
 
@@ -94,7 +94,7 @@ https://github.com/sh0e1/cloud-run-samples
 
 アプリケーションの準備が終わったら、ビルドとデプロイを行います。
 
-Cloud Buildを利用して、Docker imageをビルドし、Container RegistoryへPushします。
+Cloud Buildを利用して、Docker imageをビルドし、Container RegistoryへPushします。  
 途中でCloud Build APIを有効にしますかと聞かれるので `y` と入力します。
 
 ```bash
