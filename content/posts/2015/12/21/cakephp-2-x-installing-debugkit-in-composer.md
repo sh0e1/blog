@@ -16,7 +16,7 @@ categories:
 
 Composerがインストールされていることが前提条件です。  
 Composerのインストール方法、基本的な使い方は下記の記事をご覧ください。  
-[]()
+[今更なComposerの基本的な使い方]({{< ref "/posts/2015/12/14/basic-usage-of-composer.md" >}})
 
 ### そのままインストールすると...
 
