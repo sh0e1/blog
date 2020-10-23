@@ -11,6 +11,7 @@ googleAnalytics = "UA-131592660-1"
   profilePicture = "images/profile.png"
   mainSections = ["post"]
   customCss = ["css/custom.css"]
+  images = ["images/profile.png"]
 
   ## Math settings
   [params.math]
