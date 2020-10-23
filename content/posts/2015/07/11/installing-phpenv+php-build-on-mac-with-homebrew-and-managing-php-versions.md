@@ -11,7 +11,7 @@ Apache、MySQLに引き続き、HomebrewでphpenvをインストールしてMac�
 普通にPHPをインストールしてもいいんですが、案件によってPHPのバージョンは変わりますし、その度にPHPをインストールし直すのは面倒なので、phpenvをインストールすることにしました。  
 
 Homebrewについては下記を参照してください。  
-[MacにHomebrewをインストールしてパッケージを管理をする]({{< ref "" >}})
+[MacにHomebrewをインストールしてパッケージを管理をする]({{< ref "/posts/2015/06/10/install-homebrew-on-mac-and-manage-packages.md" >}})
 <!--more-->
 
 ### phpenvをインストール
