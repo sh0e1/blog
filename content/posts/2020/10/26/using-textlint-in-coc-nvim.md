@@ -7,12 +7,12 @@ Categories:
   - Vim
   - neovim
 ---
-WordPressからHogoへの以降に伴い、記事をMarkdownで書くようになったのでtextlintのセットアップを行いました。  
+WordPressからHogoへの移行に伴い、記事をMarkdownで書くようになったのでtextlintのセットアップを行いました。  
 普段nvimとcoc.nvimを使っているので、textlintもefm-langserverを使ってcoc.nvimから使えるようにしました。
 
 coc.nvim -> efm-langserver -> textlint
 
-設定ファイルはGitHubの[dotfiles](https://github.com/sh0e1/dotfiles)にもあげています。
+設定ファイルはGitHubの[dotfiles](https://github.com/sh0e1/dotfiles)リポジトリにもあげています。
 <!--more-->
 
 ### 前提条件
