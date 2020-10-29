@@ -13,7 +13,7 @@ Categories:
 このブログはHugo + Firebase Hostingで構築していますが、GitHub Actionsを使ってデプロイを自動化しています。  
 また、Firebase Hostingのプレビューチャンネル（ベータ版）機能を利用し、公開前にサイトを確認しています。  
 Firebase HostingでのGitHub Actionsの設定は `firebase init` コマンドを実行すると自動で設定され、すぐに利用できます。  
-Hogoで利用する場合はhugo buildコマンドをGitHub Actionsの設定ファイルに追記するだけです。  
+Hogoで利用する場合は `hugo` コマンドをGitHub Actionsの設定ファイルに追記するだけです。  
 ただし少しハマった点もあるので、その点についても少し書きます。
 <!--more-->
 
