@@ -23,7 +23,7 @@ Hogoで利用する場合は `hugo` コマンドをGitHub Actionsの設定ファ
 1. GitHub ActionsでFirebase Hosingのプレビューチャンネルにデプロイ
 1. プレビューチャンネルで確認
 1. master or mainブランチへマージ
-1. GitHub Actionsで本番環境へ公開
+1. GitHub Actionsでライブチャンネル（本番環境）へデプロイ
 
 ### 前提条件
 
