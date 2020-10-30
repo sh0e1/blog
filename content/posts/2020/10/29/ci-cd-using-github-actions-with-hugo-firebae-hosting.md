@@ -30,7 +30,7 @@ Hogoで利用する場合は `hugo` コマンドをGitHub Actionsの設定ファ
 - [Firebase Console](https://console.firebase.google.com/?hl=JA)でプロジェクトを作成済み
 - [Firebase CLI](https://firebase.google.com/docs/cli?hl=ja)をインストール済み
 - [Hugo](https://gohugo.io/)でローカルにサイトを作成済み
-- GitHubにリポジトリを作成済
+- GitHubにリポジトリを作成済み
 
 ### GitHub ActionsでFirebase Hostingにデプロイする
 
@@ -97,7 +97,7 @@ i  You can manage your secrets at https://github.com/YOUR/REPOSITORY/settings/se
 ? Set up automatic deployment to your site's live channel when a PR is merged? Yes
 ? What is the name of the GitHub branch associated with your site's live channel? main
 
-✔  Created workflow file /path/to/project/quickstart/.github/workflows/firebase-hosting-merge.yml
+✔  Created workflow file /path/to/project/.github/workflows/firebase-hosting-merge.yml
 
 i  Action required: Visit this URL to revoke authorization for the Firebase CLI GitHub OAuth App:
 https://github.com/settings/connections/applications/89cf50f02ac6aaed3484
@@ -124,7 +124,7 @@ i  Writing gitignore file to .gitignore...
 `firebase init` で追加されたGitHub Actionsの設定ファイルではHogoのビルドは実装されていないので、設定ファイルに追記します。
 
 具体的には下記の設定を追加しました。
-- Hugoのテーマをsubmodulesで管理してるので、`actions/checkout@v2` にsubmodulesの設定を追加
+- Hugoのテーマをsubmodulesで管理してるので、`actions/checkout@v2` にsubmodulesの設定
 - `peaceiris/actions-hugo@v2` を使用したHugoのビルドステップ
 
 最終的には下記のような設定になりました。
@@ -144,12 +144,12 @@ jobs:
       - uses: peaceiris/actions-hugo@v2
         with:
           hugo-version: 'latest'
-      - run: hugo --minify
+      - run: hugo --minify --environment preview
       - uses: FirebaseExtended/action-hosting-deploy@v0
         with:
           repoToken: '${{ secrets.GITHUB_TOKEN }}'
-          firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_BLOG_292812 }}'
-          projectId: blog-292812
+          firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_YOUR_PROJECT_ID }}'
+          projectId: YOUR_PROJECT_ID
         env:
           FIREBASE_CLI_PREVIEWS: hostingchannels
 ```
@@ -172,11 +172,11 @@ jobs:
       - uses: peaceiris/actions-hugo@v2
         with:
           hugo-version: 'latest'
-      - run: make build
+      - run: hugo --minify
       - uses: FirebaseExtended/action-hosting-deploy@v0
         with:
           repoToken: '${{ secrets.GITHUB_TOKEN }}'
-          firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_BLOG_292812 }}'
+          firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_YOUR_PROJECT_ID }}'
           channelId: live
           projectId: YOUR_PROJECT_ID
         env:
