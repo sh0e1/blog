@@ -3,7 +3,7 @@ title: "Hugo + Firebase HostingでGitHub Actionsを使ったCI/CD"
 author: sh0e1
 type: post
 date: 2020-10-29T21:43:04+09:00
-Categories:
+categories:
   - Firebase
   - GitHub Actions
   - CI/CD
