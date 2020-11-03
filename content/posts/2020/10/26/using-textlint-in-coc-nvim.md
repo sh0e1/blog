@@ -3,7 +3,7 @@ title: "coc.nvimでtextlintを使う"
 author: sh0e1
 type: post
 date: 2020-10-26T22:28:56+09:00
-Categories:
+categories:
   - Vim
   - neovim
 ---
