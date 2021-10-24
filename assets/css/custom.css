@@ -1,13 +1,7 @@
-.sidebar {
-  width: 30%;
-}
+@charset "UTF-8";
 
-.page-top {
-  width: 70%;
-}
-
-.content {
-  width: 70%;
+:root {
+  --content-ratio: 0.7
 }
 
 .sidebar .logo-title .title h3 {
@@ -26,18 +20,4 @@ p > code {
 
 a {
   word-wrap: break-word;
-}
-
-@media screen and (max-width: 960px) {
-  .sidebar {
-    width: 100%;
-  }
-
-  .page-top {
-    width: 100%;
-  }
-
-  .content {
-    width: 100%;
-  }
 }
