@@ -3,6 +3,8 @@ languageCode = "ja"
 title = "sh0e1.com"
 theme = "anatole"
 googleAnalytics = "UA-131592660-1"
+pygmentsCodeFences = true
+pygmentsUseClasses = true
 
 [params]
 title = "sh0e1.com"
@@ -10,7 +12,7 @@ author = "sh0e1"
 description = "Software Engineer / Go / PHP / JavaScript / GCP Professional Cloud Architect"
 profilePicture = "images/profile.png"
 mainSections = ["post"]
-customCss = ["css/custom.css"]
+customCss = ["css/custom.css", "css/syntax.css"]
 images = ["images/profile.png"]
 doNotLoadAnimations = true
 
