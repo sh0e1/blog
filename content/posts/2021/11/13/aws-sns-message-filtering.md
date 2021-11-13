@@ -3,7 +3,6 @@ title: "AWS SNS Message filtering"
 author: sh0e1
 type: post
 date: 2021-11-13T22:14:57+09:00
-draft: true
 categories:
 - AWS
 - Go
