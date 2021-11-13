@@ -12,6 +12,7 @@ profilePicture = "images/profile.png"
 mainSections = ["post"]
 customCss = ["css/custom.css"]
 images = ["images/profile.png"]
+doNotLoadAnimations = true
 
   ## Math settings
   [params.math]
