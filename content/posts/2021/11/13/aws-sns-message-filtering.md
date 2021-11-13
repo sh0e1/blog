@@ -351,7 +351,7 @@ go run ./cmd/subscriber/main.go -queue $FILTER_QUEUE_URL
 
 ## 所感
 
-- SNSトピックを複数管理しなくても、Message Attributesでサブスクリプション先を制御できるのは嬉しい
+SNSトピックを複数管理しなくても、Message Attributesでサブスクリプション先を制御できるのは嬉しい
 
 ## 参考
 
