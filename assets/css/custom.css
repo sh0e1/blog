@@ -4,6 +4,12 @@
   --content-ratio: 0.7
 }
 
+html[data-theme=dark] {
+  --bg-color: #22272e;
+  --body-color: #adbac7;
+  --pre-bg-color: rgba(99,110,123,0.4);
+}
+
 body {
   font-family: Roboto,sans-serif;
 }
